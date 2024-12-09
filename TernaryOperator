@@ -1,0 +1,14 @@
+class Ternary
+{
+public static void main(String[] args)
+{
+int a=2,b=5;
+int min(a<b)?a:b;
+System.out.println(min);
+int max(a>b)?a:b;
+System.out.println(max);
+}
+}
+****
+2
+5
