@@ -1,0 +1,64 @@
+import java.util.Scanner;
+public class array3 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		String arr[][][]=new String[2][5][2];
+		for(int i=0;i<2;i++) {
+			System.out.println("organisation:"+(i+1));
+			for(int j=0;j<2;j++) {
+				System.out.println("company:"+(j+1));
+				for(int k=0;k<2;k++) {
+					System.out.println("employee name:"+(k+1));
+		arr[i][j][k]=sc.next();	
+				}				
+			}
+		}
+		for(int i=0;i<2;i++) {
+			System.out.println("organisation:"+(i+1));
+			for(int j=0;j<2;j++) {
+				System.out.println("company:"+(j+1));
+				for(int k=0;k<2;k++) {
+					System.out.println(arr[i][j][k]);
+				}
+			}
+		}
+	}
+}
+...........
+organisation:1
+company:1
+employee name:1
+aa
+employee name:2
+bb
+company:2
+employee name:1
+cc
+employee name:2
+dd
+organisation:2
+company:1
+employee name:1
+ee
+employee name:2
+ff
+company:2
+employee name:1
+gg
+employee name:2
+hh
+organisation:1
+company:1
+aa
+bb
+company:2
+cc
+dd
+organisation:2
+company:1
+ee
+ff
+company:2
+gg
+hh
