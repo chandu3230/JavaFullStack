@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class array2 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		String arr[][]=new String[2][5];
+		for(int i=0;i<2;i++) {
+			for(int j=0;j<5;j++) {
+				System.out.println("enter employee name for company"+(i+1)+",employee"+(j+1)+":");
+			arr[i][j]=sc.next();				
+			}
+		}
+		for(int i=0;i<2;i++) {
+			System.out.println("company"+(i+1)+"employee names:");
+			for(int j=0;j<5;j++) {
+				System.out.println(arr[i][j]);
+			}
+		}
+	}
+}
+..................
+enter employee name for company1,employee1:
+aa
+enter employee name for company1,employee2:
+bb
+enter employee name for company1,employee3:
+cc
+enter employee name for company1,employee4:
+dd
+enter employee name for company1,employee5:
+ee
+enter employee name for company2,employee1:
+ff
+enter employee name for company2,employee2:
+gg
+enter employee name for company2,employee3:
+hh
+enter employee name for company2,employee4:
+ii
+enter employee name for company2,employee5:
+jj
+company1employee names:
+aa
+bb
+cc
+dd
+ee
+company2employee names:
+ff
+gg
+hh
+ii
+jj
+
