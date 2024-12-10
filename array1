@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class array1 {
+	public static void main(String args[]) {
+	Scanner sc=new Scanner(System.in);
+	String arr[]=new String[5];
+	for(int i=0;i<5;i++) {
+          System.out.println("enter the name of employee no:"+(i+1));
+    arr[i]=sc.next();
+	}
+	for(String name:arr) {
+		System.out.println(name);
+	}
+	}
+}
+..................
+enter the name of employee no:1
+chandu
+enter the name of employee no:2
+deepu
+enter the name of employee no:3
+fazu
+enter the name of employee no:4
+haleem
+enter the name of employee no:5
+pranaya
+chandu
+deepu
+fazu
+haleem
+pranaya
