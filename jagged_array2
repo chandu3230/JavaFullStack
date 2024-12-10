@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class jagged_array2 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		String arr[][]=new String[2][];
+		for(int i=0;i<2;i++) {
+			System.out.println("enter no.of employees in company no:"+(i+1));
+			arr[i]=new String[sc.nextInt()];
+			System.out.println("inside company no:"+(i+1));
+			for(int j=0;j<arr[i].length;j++) {
+				System.out.println("enter the name of employee no:"+(j+1));
+				arr[i][j]=sc.next();
+			}				
+		}
+		for(int i=0;i<2;i++) {
+			System.out.println("inside company no:"+(i+1));
+			for(int j=0;j<arr[i].length;j++) {
+				System.out.println("employee"+(j+1)+":"+arr[i][j]);
+			}
+		}
+	}
+}
+...................
+enter no.of employees in company no:1
+2
+inside company no:1
+enter the name of employee no:1
+aa
+enter the name of employee no:2
+bb
+enter no.of employees in company no:2
+1
+inside company no:2
+enter the name of employee no:1
+cc
+inside company no:1
+employee1:aa
+employee2:bb
+inside company no:2
+employee1:cc
+
