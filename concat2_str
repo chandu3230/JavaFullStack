@@ -1,0 +1,25 @@
+package string;
+
+public class concat2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1=new String("spring");
+		String s2=new String("spring");
+		String s3= "spring";
+		String s4= "spring";
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+		System.out.println(s4);
+
+
+        
+	}
+
+}
+..................................
+spring
+spring
+spring
+spring
