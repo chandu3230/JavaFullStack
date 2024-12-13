@@ -1,0 +1,17 @@
+package polymorphism;
+public class mol {
+		static int add(int a,int b) {
+			return a+b;
+		}
+		static int add(int a,int b,int c) {
+			return a+b+c;
+		}
+		public static void main(String[] args) {
+			System.out.println("sum of 2 parameters:"+add(5,6));
+			System.out.println("sum of 3 parameters:"+add(5,6,3));
+	}
+
+}
+................................
+sum of 2 parameters:11
+sum of 3 parameters:14
