@@ -1,0 +1,17 @@
+package string;
+
+public class strbuf_equal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringBuffer s1=new StringBuffer("hello");
+		StringBuffer s2=new StringBuffer("hello");
+		System.out.println(s1==s2);
+		System.out.println(s1.equals(s2));
+
+	}
+
+}
+...........................
+false
+false
