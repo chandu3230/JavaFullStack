@@ -1,0 +1,38 @@
+package polymorphism;
+ class sample {
+    int getrateofinterest() {
+		return 0;
+	}A
+}
+class sbi extends sample {
+	@Override
+	int getrateofinterest() {
+		return 9;
+	}	
+}
+class axis extends sample {
+	@Override
+	int getrateofinterest() {
+		return 8;
+	}
+}
+class hdfc extends sample {
+	@Override
+	int getrateofinterest() {
+		return 7;
+	}
+}
+ public class mor {
+	public static void main(String args[]) {
+		sbi b1=new sbi();
+		axis b2=new axis();
+		hdfc b3=new hdfc();
+	    System.out.println("the rate of interest of sbi:"+b1.getrateofinterest());
+	    System.out.println("the rate of interest of axis:"+b2.getrateofinterest());
+	    System.out.println("the rate of interest of hdfc:"+b3.getrateofinterest());
+	}
+}
+..................................
+the rate of interest of sbi:9
+the rate of interest of axis:8
+the rate of interest of hdfc:7
