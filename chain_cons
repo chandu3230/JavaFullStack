@@ -1,0 +1,21 @@
+package constructor;
+class parent {
+	 parent() {
+		super();
+		System.out.println("inside the parent constructor");
+	}
+}
+class child extends parent {
+	 child() {
+		System.out.println("inside the child constructor");
+	}
+}
+public class cons_chain {
+	public static void main(String args[]) {
+		child c1=new child();
+	}
+}
+......................................
+inside the parent constructor
+inside the child constructor
+
