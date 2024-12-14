@@ -1,0 +1,38 @@
+package polymorphism;
+import java.util.Scanner;
+class Test {
+    double principle;
+    double time;
+    double simpleInterest;
+    static double rate;
+    static {
+        rate = 2.5;
+    }
+    void collectData() {
+        Scanner sc = new Scanner(System.in);
+            System.out.println("Enter the principle amount:");
+            principle = sc.nextDouble();
+            System.out.println("Enter time in years:");
+            time = sc.nextDouble();
+    }
+    void calculate() {
+        simpleInterest = (principle * time * rate) / 100;
+    }
+    void display() {
+        System.out.println("Simple Interest is: " + simpleInterest);
+    }
+}
+public class farmer_pgm {
+    public static void main(String[] args) {
+        Test t = new Test();
+        t.collectData();
+        t.calculate();
+        t.display();
+    }
+}
+...........................
+Enter the principle amount:
+5000
+Enter time in years:
+2
+Simple Interest is: 250.0
