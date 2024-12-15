@@ -1,0 +1,91 @@
+import java.util.Scanner;
+interface shapes {
+	void collectdata();
+	void calculate();
+	void display();
+}
+class circle implements shapes {
+	double pi=3.14769;
+	double r,area;
+	@Override
+    public void collectdata() {
+    	Scanner sc=new Scanner(System.in);
+    	System.out.println("enter radius:");
+    	r=sc.nextDouble();
+    }
+	@Override
+    public void calculate() {
+    	area=pi*r*r;
+    }
+	@Override
+    public void display() {
+    	System.out.println("area of circle:"+area);
+    }
+}
+public class rectangle  implements shapes{
+	double l,b,area;
+	@Override
+	public void collectdata() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter length:");
+		l=sc.nextDouble();
+		System.out.println("enter breadth");
+		b=sc.nextDouble();
+	}
+	@Override
+	public void calculate() {
+		area=l*b;
+	}
+	@Override
+	public void display() {
+		System.out.println("area of rectangle:"+area);
+	}
+}
+class square implements shapes {
+	double l,area;
+	@Override
+	public void collectdata() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter length:");
+		l=sc.nextDouble();
+	}
+	@Override
+	public void calculate() {
+		area=l*l;
+	}
+	@Override
+	public void display() {
+		System.out.println("area of square:"+area);
+	}
+}
+public class chandu {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		circle c=new circle();
+		c.collectdata();
+		c.calculate();
+		c.display();
+		rectangle r=new rectangle();
+		r.collectdata();
+		r.calculate();
+		r.display();
+		square s=new square();
+		s.collectdata();
+		s.calculate();
+		s.display();
+	}
+}
+.........................................
+enter radius:
+2
+area of circle:12.59076
+enter length:
+3
+enter breadth
+4
+area of rectangle:12.0
+enter length:
+5
+area of square:25.0
+
