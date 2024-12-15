@@ -1,0 +1,35 @@
+abstract class plane { 
+	void takeoff() {
+		System.out.println("plane tookoff");
+	}
+	abstract void fly();
+	void land() {
+		System.out.println("plane landed");
+	}
+}
+class cargoplane extends plane{ 
+	@Override
+	void fly() {
+		System.out.println("cargoplane tookoff");
+	}
+}
+public class abs_launch { 
+	public static void main(String args[]) {
+		cargoplane p=new cargoplane();
+		p.takeoff();
+		p.land();
+		p.fly();
+		plane ref=new plane () {
+			@Override
+			void fly() {
+				System.out.println("plane flew");
+			}
+		};
+		ref.fly();
+	}
+}
+.....................................
+plane tookoff
+plane landed
+cargoplane tookoff
+plane flew
