@@ -1,0 +1,100 @@
+import java.util.Scanner;
+abstract class shape {
+	abstract void  collectdata();
+	abstract void calculate();
+	abstract void display();
+}
+public class circle1 extends shape {
+	double radius;
+	double area;
+	final double pi=3.14;
+    @Override
+    public void collectdata() {
+	   Scanner sc=new Scanner(System.in);
+	   System.out.println("enter the radius:");
+	   radius=sc.nextDouble();
+    }
+    @Override
+    public void calculate() {
+	   area=pi*radius*radius;
+    }
+    @Override
+    public void display() {
+	    System.out.println("area of circle is:"+area);
+    }
+}
+class rectangle1 extends shape{
+	double length;
+	double width;
+	double area;
+	@Override
+	void collectdata() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("area the length :");
+		System.out.println("enter the width :");
+		length=sc.nextDouble();
+		width=sc.nextDouble();
+	}
+	@Override
+	void calculate() {
+	area=length*width;	
+	}
+	@Override
+	void display() {
+		System.out.println("area of rectangle is:"+area);
+	}
+}
+class triangle1 extends shape {
+	double base;
+	double height;
+	double area;
+	@Override
+	void collectdata() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the base :");
+		System.out.println("enter the height:");
+		base=sc.nextDouble();
+		height=sc.nextDouble();
+	}
+	@Override
+	void calculate() {
+		area= 0.5*base*height;
+	}
+	@Override
+	void display() {
+		System.out.println("enter area of triangle is:"+area);
+	}
+}
+public class priya {
+	public static void main(String args[]) {
+		circle1 a= new circle1();
+		a.collectdata();
+		a.calculate();
+		a.display();
+		rectangle1 r=new rectangle1();
+		r.collectdata();
+		r.calculate();
+		r.display();
+		triangle1 t=new triangle1();
+		t.collectdata();
+		t.calculate();
+		t.display();
+	}
+}
+.........................................
+enter the radius:
+5
+area of circle is:78.5
+area the length :
+enter the width :
+6
+6
+area of rectangle is:36.0
+enter the base :
+enter the height:
+7
+8
+enter area of triangle is:28.0
+
+
+
