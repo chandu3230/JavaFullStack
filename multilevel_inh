@@ -1,0 +1,27 @@
+public class a { 
+	public void eat() {
+		System.out.println("a eats");
+	}
+}
+public class b extends a { 
+	public void sleep() {
+		System.out.println("b sleeps");
+	}
+}
+public class c extends b{ 
+	public void run() {
+		System.out.println("c runs");
+	}
+}
+public class multilevel { 
+	public static void main(String args[]) {
+		c ob=new c();
+		ob.eat();
+		ob.sleep();
+		ob.run();
+	}
+}
+.........................
+a eats
+b sleeps
+c runs
