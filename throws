@@ -1,0 +1,16 @@
+package exception;
+public class throwsexception {
+	public static void main(String args[]) { 
+		checkage(19);
+	}
+	static void checkage(int age) throws ArithmeticException {
+		if(age<18) {
+			throw new ArithmeticException("you must be 18 or above 18 to vote");
+		}else {
+			System.out.println("you are eligible to vote");
+		}
+	}
+
+}
+..........................
+you are eligible to vote
