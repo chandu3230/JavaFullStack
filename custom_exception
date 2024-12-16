@@ -1,0 +1,21 @@
+package exception;
+class MyException extends Exception {
+	public MyException(String s) {
+		super(s);
+	}
+}
+public class start {
+	public static void main(String args[]) {
+		try {
+			throw new MyException("new exception");
+		}
+		catch(MyException ex) {
+			System.out.println("exception caught");
+			System.out.println(ex.getMessage());
+		}
+	}
+
+}
+..................................
+exception caught
+new exception
