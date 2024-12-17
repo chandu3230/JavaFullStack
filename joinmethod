@@ -1,0 +1,46 @@
+package racecondition;
+class demo extends Thread {
+	@Override
+	public void run() {
+		try {
+			System.out.println(Thread.currentThread().getName()+" has entered the bathroom");
+			Thread.sleep(3000);
+			System.out.println(Thread.currentThread().getName()+" is using the bathroom");
+			Thread.sleep(3000);
+			System.out.println(Thread.currentThread().getName()+" is finished using the bathroom");
+			Thread.sleep(3000);
+		}
+		catch(InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+public class joinmethod {
+	public static void main(String args[]) throws InterruptedException{
+		demo boy=new demo();
+		demo girl=new demo();
+		demo others=new demo();
+		Thread t1=new Thread(boy);
+		Thread t2=new Thread(girl);
+		Thread t3=new Thread(others);
+		t1.setName("boy");
+		t2.setName("girl");
+		t3.setName("others");
+		t1.start();
+		t1.join();
+		t2.start();
+		t2.join();
+		t3.start();
+		t3.join();
+	}
+}
+............................................
+boy has entered the bathroom
+boy is using the bathroom
+boy is finished using the bathroom
+girl has entered the bathroom
+girl is using the bathroom
+girl is finished using the bathroom
+others has entered the bathroom
+others is using the bathroom
+others is finished using the bathroom
