@@ -1,0 +1,17 @@
+package collections;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+public class linkedhashmap {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedHashMap lhm=new LinkedHashMap();
+		lhm.put(10, "sachin");
+		lhm.put(7, "msd");
+		lhm.put(18, "kohli");
+		System.out.println(lhm);
+
+	}
+
+}
+.............................................
+{10=sachin, 7=msd, 18=kohli}
