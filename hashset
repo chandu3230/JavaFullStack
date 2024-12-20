@@ -1,0 +1,16 @@
+package collections;
+import java.util.HashSet;
+import java.util.TreeSet;
+public class hashset {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashSet hs=new HashSet();
+		hs.add(10);
+		hs.add(03);
+		hs.add(75);
+		hs.add(50);
+		System.out.println(hs);
+	}
+}
+..............................
+[50, 3, 10, 75]
