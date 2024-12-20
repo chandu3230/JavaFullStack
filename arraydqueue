@@ -1,0 +1,26 @@
+package collections;
+import java.util.ArrayDeque;
+public class arraydqueue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayDeque ad=new ArrayDeque();
+		ad.add(10);
+		ad.add(10);
+		ad.addFirst(30);
+		ad.addLast(70);
+		System.out.println(ad.getFirst());
+		System.out.println(ad.getLast());
+		System.out.println(ad.contains(30));
+		System.out.println(ad.isEmpty());
+		ad.clear();
+		System.out.println(ad);
+	}
+
+}
+........................................
+30
+70
+true
+false
+[]
