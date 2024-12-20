@@ -1,0 +1,15 @@
+package collections;
+import java.util.Hashtable;
+public class hashtable {
+	public static void main(String args[]) {
+		Hashtable ht=new Hashtable();
+		ht.put(1, "chandu");
+		ht.put(2,"swathi");
+		ht.put(3,"prabha");
+		ht.put(4,"prabha");
+		System.out.println(ht);
+	}
+
+}
+...................................................
+{4=prabha, 3=prabha, 2=swathi, 1=chandu}
